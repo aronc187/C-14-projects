@@ -1,0 +1,54 @@
+#include <iostream>
+#include <vector>//include this command ALWAYS TO USE VECTORS!!
+
+
+using namespace std;
+
+int main()  {
+    
+//    vector <char> vowels { 'a', 'e', 'i', 'o', 'u'};  vectors with characters
+    
+//    cout<< vowels[0] <<endl;
+//    cout<< vowels[1] << endl;
+    
+      vector <int> test_scores {100, 97, 81}; //Vectors with intergers
+    
+//       cout<< test_scores[0]<< endl;
+//       cout<< test_scores[1]<< endl;
+       
+ //      cout<<"\nThere are this many vectors:"<<test_scores.size() <<endl; // 'size()' tells you how many vectors you have 
+       
+       cout<<"\nEnter 3  test scores:"; //changing the vectors by inputing different test scores
+       cin>> test_scores.at (0);
+       cin>> test_scores.at (1);
+       cin>> test_scores.at (2); 
+   
+       cout<<"\nUpdated test scores"<<endl;
+       cout<< test_scores.at (0)<<endl;
+       cout<< test_scores.at (1)<<endl;
+       cout<< test_scores.at (2)<<endl;     
+       
+      cout<<"\nEnter the test scores to add"<<endl;
+      
+      int score_to_add{0};
+      cin>>score_to_add;
+      test_scores.push_back(score_to_add);
+      
+      cout<<"\nEnter one more test score to add"<<endl;
+      
+      cin>>score_to_add;
+      
+      test_scores.push_back(score_to_add);
+      
+       cout<<"\nTest scores are now"<<endl;
+       cout<< test_scores.at (0)<<endl;
+       cout<< test_scores.at (1)<<endl;
+       cout<< test_scores.at (2)<<endl;    
+       cout<< test_scores.at (3)<<endl;
+       cout<< test_scores.at (4)<<endl;
+       
+       cout<<"\nThere are now:"<<test_scores.size()<<endl;
+    
+
+        return 0;
+}
