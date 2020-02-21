@@ -1,0 +1,53 @@
+#include <iostream>
+/*Arons's cleaning service
+  - charges $30 per room
+   -sales tax rate is 6%
+   -estimates are valid for 30 days 
+    
+     
+    prompt the user for the number of rooms they would like cleaned
+     and provide an estimate such as:
+    
+estimate for carpet cleaning service:
+number of rooms:2
+price per room:30$
+cost:60$
+tax: 3.6$
+total: cost+tax=63.6$
+===============================================
+*/
+
+using namespace std;
+
+int main() {
+    
+    cout<<"Hello,welcome to Frank's Cleaning service " <<endl;
+    
+    cout<<endl;
+    
+    cout<<"How many rooms would you like cleaned?"<< endl;
+    
+    cout<<endl;
+    
+    int number_of_rooms {0};
+    cin >> number_of_rooms;
+    
+    const double price_per_room (30); 
+    const double sales_tax (0.06);
+    
+    cout<<"\nEstimate for carpets" <<endl;
+    cout<<"Number of rooms:"<<number_of_rooms<<endl;
+    
+    cout<<"Price per room:"<<price_per_room<<endl;
+    cout<<"Cost:"<<price_per_room*number_of_rooms<<endl;
+    
+    cout<<"Tax:"<<price_per_room*number_of_rooms*sales_tax<<endl;
+    
+    cout<<"============================="<<endl;
+    
+    cout<<"total estimate:"<<((price_per_room*number_of_rooms)+
+                                               (price_per_room*number_of_rooms))+ <<endl;
+    cout<<"This estimate is valid for 30 days."<<endl;
+    
+    return 0;
+}
